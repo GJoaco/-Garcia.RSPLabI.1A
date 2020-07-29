@@ -1,0 +1,87 @@
+# depslib dependency file v1.0
+1596030687 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\bicis.c
+	<stdio.h>
+	<stdlib.h>
+	"bicis.h"
+	"LinkedList.h"
+
+1596023953 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1595997848 c:\users\joaquin garcia\desktop\recuperatorio parcial 2\linkedlist.h
+
+1596030738 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"utn.h"
+	"funciones.h"
+
+1593311849 c:\users\joaquin garcia\desktop\recuperatorio parcial 2\utn.h
+
+1596030858 c:\users\joaquin garcia\desktop\recuperatorio parcial 2\funciones.h
+	"LinkedList.h"
+
+1593311849 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+
+1596030687 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"bicis.h"
+	"utn.h"
+
+1596030858 c:\users\joaquin garcia\desktop\recuperatorio parcial 2\bicis.h
+	"LinkedList.h"
+
+1596030687 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\bicis.c
+	<stdio.h>
+	<stdlib.h>
+	"bicis.h"
+	"LinkedList.h"
+
+1596030858 c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\bicis.h
+	"LinkedList.h"
+
+1595997848 c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\linkedlist.h
+
+1596030687 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"bicis.h"
+	"utn.h"
+
+1596030858 c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\funciones.h
+	"LinkedList.h"
+
+1593311849 c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\utn.h
+
+1596023953 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1596030738 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"utn.h"
+	"funciones.h"
+
+1593311849 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2 - copia\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+
