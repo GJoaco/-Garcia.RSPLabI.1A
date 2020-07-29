@@ -12,6 +12,11 @@ int main()
     int opcion;
     srand (time(NULL));
 
+    if(lista==NULL)
+    {
+        printf("No se pudo asignar memoria");
+        exit(EXIT_FAILURE);
+    }
     do
     {
         system("cls");
@@ -88,6 +93,8 @@ int main()
         }
 
     }while(opcion!=7);
+
+    ll_deleteLinkedList(lista);
 
     return 0;
 }
