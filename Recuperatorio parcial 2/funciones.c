@@ -104,7 +104,7 @@ int filtrarTipo(LinkedList* lista)
             listaFiltrada=ll_filter(lista,filtrarBmx);
             if(listaFiltrada!=NULL)
             {
-                guardarArchivo(listaFiltrada,"Bicicletas BMX.csv");
+                guardarArchivo(listaFiltrada,"BicicletasBMX.csv");
                 retorno=1;
             }
             break;
@@ -112,7 +112,7 @@ int filtrarTipo(LinkedList* lista)
             listaFiltrada=ll_filter(lista,filtrarPlayera);
             if(listaFiltrada!=NULL)
             {
-                guardarArchivo(listaFiltrada,"Bicicletas Playera.csv");
+                guardarArchivo(listaFiltrada,"BicicletasPlayera.csv");
                 retorno=1;
             }
             break;
@@ -120,7 +120,7 @@ int filtrarTipo(LinkedList* lista)
             listaFiltrada=ll_filter(lista,filtrarMtb);
             if(listaFiltrada!=NULL)
             {
-                guardarArchivo(listaFiltrada,"Bicicletas MTB.csv");
+                guardarArchivo(listaFiltrada,"BicicletasMTB.csv");
                 retorno=1;
             }
             break;
@@ -128,7 +128,7 @@ int filtrarTipo(LinkedList* lista)
             listaFiltrada=ll_filter(lista,filtrarPaseo);
             if(listaFiltrada!=NULL)
             {
-                guardarArchivo(listaFiltrada,"Bicicletas Paseo.csv");
+                guardarArchivo(listaFiltrada,"BicicletasPaseo.csv");
                 retorno=1;
             }
             break;
@@ -199,12 +199,12 @@ int mostrarPocisiones ( LinkedList* lista)
 
 int guardarPocisiones ( LinkedList* lista)
 {
-    FILE* f = fopen("Bicicletas pocisiones.csv","w");
+    FILE* f = fopen("BicicletasPosiciones.csv","w");
     int retorno=0;
     int tam = ll_len(lista);
     eBicicleta* aux;
 
-    fprintf(f,"id_bike,nombre,tipo,tiempo\n\n");
+    fprintf(f,"id_bike,nombre,tipo,tiempo\n");
 
     if(lista!=NULL)
     {
@@ -212,23 +212,6 @@ int guardarPocisiones ( LinkedList* lista)
 
         for(int i=0; i<4; i++)
         {
-            if(i==0)
-            {
-                fprintf(f,"BMX:\n\n");
-            }
-            else if(i==1)
-            {
-                fprintf(f,"\nPLAYERA:\n\n");
-            }
-            else if(i==2)
-            {
-                fprintf(f,"\nMTB:\n\n");
-            }
-            else
-            {
-                fprintf(f,"\nPASEO:\n\n");
-            }
-
             for(int j=i+1; j<tam; j++)
             {
                 aux = ll_get(lista,j);
@@ -236,19 +219,19 @@ int guardarPocisiones ( LinkedList* lista)
                 {
                     if(i==0 && strcmp(aux->tipo,"BMX")==0)
                     {
-                        fprintf(f,"%d %s %s %d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
+                        fprintf(f,"%d,%s,%s,%d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
                     }
                     else if(i==1 && strcmp(aux->tipo,"PLAYERA")==0)
                     {
-                        fprintf(f,"%d %s %s %d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
+                        fprintf(f,"%d,%s,%s,%d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
                     }
                     else if(i==2 && strcmp(aux->tipo,"MTB")==0)
                     {
-                        fprintf(f,"%d %s %s %d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
+                        fprintf(f,"%d,%s,%s,%d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
                     }
                     else if(i==3 && strcmp(aux->tipo,"PASEO")==0)
                     {
-                        fprintf(f,"%d %s %s %d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
+                        fprintf(f,"%d,%s,%s,%d\n",aux->id_bike,aux->nombre,aux->tipo,aux->tiempo);
                     }
                 }
             }

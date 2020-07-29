@@ -13,7 +13,7 @@
 
 1595997848 c:\users\joaquin garcia\desktop\recuperatorio parcial 2\linkedlist.h
 
-1596030738 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\main.c
+1596031541 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -32,9 +32,10 @@
 	<ctype.h>
 	"utn.h"
 
-1596030687 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\funciones.c
+1596031676 source:c:\users\joaquin garcia\desktop\recuperatorio parcial 2\funciones.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	"funciones.h"
 	"bicis.h"
 	"utn.h"

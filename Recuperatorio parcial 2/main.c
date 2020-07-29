@@ -64,7 +64,6 @@ int main()
             system("cls");
             if(mostrarPocisiones(lista))
             {
-                printf("Archivo guardado\n");
             }
             else
             {
@@ -76,6 +75,7 @@ int main()
             system("cls");
             if(guardarPocisiones(lista))
             {
+                printf("Archivo guardado\n");
             }
             else
             {
